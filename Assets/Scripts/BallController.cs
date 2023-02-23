@@ -8,15 +8,11 @@ public class BallController : MonoBehaviour
     [SerializeField] private Vector3 speed;
 
     // Display the score, set from unity
-    [SerializeField] private TMPro.TMP_Text scoreText1;
-    [SerializeField] private TMPro.TMP_Text scoreText2;
+    [SerializeField] private ScoreCounter score1;
+    [SerializeField] private ScoreCounter score2;
 
     // The speedMultiplier gives extra speed to the ball
     [SerializeField] private float speedMultiplier = 1;
-
-    // Store the score for each user
-    private int score1 = 0;
-    private int score2 = 0;
 
     // The position and speed at the beginning, to easily reset when the ball goes off-screen
     private Vector3 startPosition;
@@ -30,7 +26,7 @@ public class BallController : MonoBehaviour
         startSpeed = speed;
     }
 
-    void ProcessWinner(ref int score, ref TMPro.TMP_Text scoreText){
+    void ProcessWinner(ScoreCounter score){
         // Reset the position and set the speed to the inverse of the start speed
         transform.position = startPosition;
         speed = -startSpeed;
@@ -39,9 +35,8 @@ public class BallController : MonoBehaviour
         startSpeed = speed;
         speedMultiplier = 1;
 
-        // Increase and display the score of player 2
-        score++;
-        scoreText.text = score.ToString();
+        // Increase and display the score of the player
+        score.IncrementScore();
     }
 
     // Update is called once per frame
@@ -58,12 +53,12 @@ public class BallController : MonoBehaviour
 
         // If the ball goes off the left edge of the screen, player 2 wins
         if(transform.position.x < -11 - transform.localScale.x){
-            ProcessWinner(ref score2, ref scoreText2);
+            ProcessWinner(score2);
         }
 
         // If the ball goes off the right edge of the screen, player 1 wins
         if(transform.position.x > 11 + transform.localScale.x){
-            ProcessWinner(ref score1, ref scoreText1);
+            ProcessWinner(score1);
         }
     }
 
