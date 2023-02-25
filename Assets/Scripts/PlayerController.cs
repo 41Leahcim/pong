@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     // Set the speed for the paddles
-    private float speed = 4;
+    private float speed = 8;
     private float direction = 0;
 
     // Start is called before the first frame update

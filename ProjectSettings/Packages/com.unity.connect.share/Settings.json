@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong2.1/pong3.0;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong2.1;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong1.0/pong2.0;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong1.0;/home/michael/Documents/programming/unity/projects/pong/Webtest/pong;/home/michael/Documents/programming/unity/projects/pong/Linux/pong;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong0.1;;;\"}"
+                "value": "{\"m_Value\":\"/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong2.1/pong3.0;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong2.1;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong1.0/pong2.0;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong1.0;/home/michael/Documents/programming/unity/projects/pong/Webtest/pong;/home/michael/Documents/programming/unity/projects/pong/Linux/pong;/home/michael/Documents/programming/unity/projects/pong/WebGL Builds/pong0.1;;\"}"
             }
         ]
     }
