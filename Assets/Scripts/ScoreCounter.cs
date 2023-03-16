@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(TMPro.TMP_Text))]
 public class ScoreCounter : MonoBehaviour
 {
     // Display the score, set from unity
